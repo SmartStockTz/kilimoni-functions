@@ -40,7 +40,7 @@ export const getPosts = (start_at = 0, size=10) => {
     return withPostgresClient(async client => {
         await createATable(client);
         const r = await client.query(`
-            SELECT * FROM posts WHERE id>${start_at} ORDER BY id asc LIMIT ${size};
+            SELECT id,name,unit,quantity,price,contact,created_at,updated_at FROM posts WHERE id>${start_at} ORDER BY id asc LIMIT ${size};
         `);
         return r?.rows ?? [];
     });
