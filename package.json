@@ -5,7 +5,8 @@
     "test": "echo \"no test\""
   },
   "dependencies": {
-    "bfast": "^6.0.1"
+    "bfast": "^6.0.1",
+    "pg": "^8.11.2"
   },
   "private": true
 }
