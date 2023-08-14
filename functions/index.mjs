@@ -1,9 +1,9 @@
-// const bfast = require('bfast');
+import bfast from "bfast";
 //
-// exports.helloWorld = bfast.functions().onHttpRequest('/hello', (request, response) => {
-//     // your logic
-//     response.send("Hello from BFast!");
-// });
+export const helloWorld = bfast.functions().onHttpRequest('/hello', (request, response) => {
+    // your logic
+    response.send("Hello from Kilimoni!");
+});
 //
 // exports.helloEvent = bfast.functions().onEvent("/hello", ({auth, payload, socket}) => {
 //     // your logic
